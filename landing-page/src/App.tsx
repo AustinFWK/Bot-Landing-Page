@@ -1,6 +1,7 @@
 import Hero from "./sections/hero/Hero";
 import ProblemSolution from "./sections/problem/Problem";
 import Features from "./sections/features/Features";
+import CallToAction from "./sections/cta/callToAction";
 import { ThemeProvider } from "./components/themeProvider";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Hero />
       <ProblemSolution />
       <Features />
+      <CallToAction />
     </ThemeProvider>
   );
 }

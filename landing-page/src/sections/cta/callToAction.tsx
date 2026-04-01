@@ -1,15 +1,11 @@
 "use client";
 import { buttonVariants } from "@/components/ui/button";
 
-export default function Hero() {
+export default function CallToAction() {
   return (
     <section className="section">
       <div className="container">
-        <h2>Never miss a Valorant Patch again!</h2>
-        <span>
-          Get instant, clean, easy-to-read patch notes delivered straight to
-          your Discord server. <br />
-        </span>
+        <h2>Ready to stay up to date? </h2>
         <a
           href="https://discord.com/oauth2/authorize?client_id=1204815740918693898"
           target="_blank"
