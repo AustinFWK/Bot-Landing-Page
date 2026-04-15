@@ -1,7 +1,7 @@
 import { Badge } from "./badge";
 import { Card, CardContent } from "./card";
 
-interface HowItWorksStepsProps {
+interface InstructionStepsProps {
   step: string;
   title: string;
   description: string;
@@ -9,13 +9,13 @@ interface HowItWorksStepsProps {
   reverse?: false;
 }
 
-export function HowItWorksSteps({
+export function InstructionSteps({
   step,
   title,
   description,
   image,
   reverse,
-}: HowItWorksStepsProps) {
+}: InstructionStepsProps) {
   return (
     <div
       className={`grid gap-12 items-center md:grid-cols-2 ${
