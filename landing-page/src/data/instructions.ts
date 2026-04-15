@@ -22,8 +22,8 @@ export const instructions: Instruction[] = [
   },
   {
     step: "3",
-    title: "Invite the bot",
-    description: "Add the bot to your discord server in seconds.",
+    title: "Receive patchnotes",
+    description: "Enjoy patchnotes delivered straight to your discord server!",
     image: "",
   },
 ];
