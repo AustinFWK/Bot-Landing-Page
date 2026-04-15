@@ -1,21 +1,13 @@
 import { Badge } from "./badge";
 import { Card, CardContent } from "./card";
+import { type Instruction } from "@/data/instructions";
 
 interface InstructionStepsProps {
-  step: string;
-  title: string;
-  description: string;
-  image: string;
-  reverse?: false;
+  instruction: Instruction;
 }
 
-export function InstructionSteps({
-  step,
-  title,
-  description,
-  image,
-  reverse,
-}: InstructionStepsProps) {
+export function InstructionSteps({ instruction }: InstructionStepsProps) {
+  const { step, title, description, image, reverse } = instruction;
   return (
     <div
       className={`grid gap-12 items-center md:grid-cols-2 ${
