@@ -6,7 +6,7 @@ interface HowItWorksStepsProps {
   title: string;
   description: string;
   image: string;
-  reverse: false;
+  reverse?: false;
 }
 
 export function HowItWorksSteps({

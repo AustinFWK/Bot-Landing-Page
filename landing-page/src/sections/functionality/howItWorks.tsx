@@ -1,12 +1,15 @@
+import { HowItWorksSteps } from "@/components/ui/howItWorksStep";
+
 export default function HowItWorks() {
   return (
     <section className="section">
-      <div className="container">
-        <h2>Patch notes are long, cluttered, and easy to miss</h2>
-        <div>
-          With the Valorant Patch Bot, it sends the important stuff directly to
-          your server - formatted for quick reading.
-        </div>
+      <div className="container space-y-24">
+        <HowItWorksSteps
+          step="01"
+          title="Invite the Bot"
+          description="Add the bot to your discord server in seconds."
+          image=""
+        />
       </div>
     </section>
   );
