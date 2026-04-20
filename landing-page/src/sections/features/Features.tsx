@@ -6,10 +6,12 @@ export default function Features() {
     <section className="section">
       <div className="container">
         <h2>Powerful but simple</h2>
-        <h3>Everything you need. Nothing you don't.</h3>
-        {features.map((feature) => (
-          <FeatureCard key={feature.title} feature={feature} />
-        ))}
+        <div className="grid">
+          <h3>Everything you need. Nothing you don't.</h3>
+          {features.map((feature) => (
+            <FeatureCard key={feature.title} feature={feature} />
+          ))}
+        </div>
       </div>
     </section>
   );
