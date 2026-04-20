@@ -1,4 +1,4 @@
-import { InstructionSteps } from "@/components/ui/Instructions";
+import { InstructionSteps } from "@/components/ui/InstructionCard";
 import { instructions } from "@/data/instructions";
 
 export default function Instructions() {
