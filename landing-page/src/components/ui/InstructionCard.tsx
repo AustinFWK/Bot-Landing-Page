@@ -1,4 +1,3 @@
-import { Badge } from "./badge";
 import { Card, CardContent } from "./card";
 import { type Instruction } from "@/data/instructions";
 
@@ -14,18 +13,18 @@ export function InstructionSteps({ instruction }: InstructionStepsProps) {
         reverse ? "md:[&>*:first-child]:order-2" : ""
       }`}
     >
-      {/* Text */}
       <Card className="border-muted">
         <CardContent className="p-8 space-y-4">
-          <Badge variant="secondary">{step}</Badge>
+          <span className="inline-block text-[10px] font-bold tracking-widest uppercase bg-brand-accent/10 text-brand-accent border border-brand-accent/25 rounded px-2 py-0.5">
+            Step {step}
+          </span>
 
-          <h3 className="text-muted-foreground">{title}</h3>
+          <h3>{title}</h3>
 
-          <p className="text-muted-foreground">{description}</p>
+          <p className="text-muted-foreground text-sm leading-relaxed">{description}</p>
         </CardContent>
       </Card>
 
-      {/* Images */}
       <div className="rounded-xl overflow-hidden border bg-muted">
         <img src={image} alt={title} className="w-full h-auto" />
       </div>
