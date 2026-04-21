@@ -9,8 +9,8 @@ function App() {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <Hero />
-      <Instructions />
       <Features />
+      <Instructions />
       <CallToAction />
       <Footer />
     </ThemeProvider>
