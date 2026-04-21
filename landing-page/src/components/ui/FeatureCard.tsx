@@ -12,8 +12,12 @@ function DiscordPreview() {
       </div>
       <div className="min-w-0">
         <div className="flex items-center gap-1.5 mb-1">
-          <span className="text-[11px] font-bold text-white">Valorant News</span>
-          <span className="text-[8px] font-bold bg-[#5865f2] text-white rounded px-1 py-px">APP</span>
+          <span className="text-[11px] font-bold text-white">
+            Valorant News
+          </span>
+          <span className="text-[8px] font-bold bg-[#5865f2] text-white rounded px-1 py-px">
+            APP
+          </span>
         </div>
         <div className="text-[10px] text-[#b5bac1] leading-relaxed">
           <div>Patch 12.03 — TL:DR</div>
@@ -24,7 +28,9 @@ function DiscordPreview() {
           <div className="pl-3">• Reclaim timer increased 15s → 20s</div>
           <div className="pl-3">• Mosh Pit is now reclaimable</div>
           <div className="mt-1 border-l-2 border-brand-accent/40 pl-2 bg-[#2b2d31] rounded-r text-[9px] text-[#888]">
-            <div className="font-semibold text-[#ccc] text-[10px]">VALORANT Patch Notes 12.03</div>
+            <div className="font-semibold text-[#ccc] text-[10px]">
+              VALORANT Patch Notes 12.03
+            </div>
             <div>Modes updates, Gekko changes, and more.</div>
           </div>
         </div>
@@ -47,7 +53,9 @@ export function FeatureCard({ feature }: FeatureCardProps) {
             <IconComponent />
           </div>
           <h3 className="text-lg font-bold mb-2">{title}</h3>
-          <p className="text-muted-foreground text-sm leading-relaxed">{description}</p>
+          <p className="text-muted-foreground text-sm leading-relaxed">
+            {description}
+          </p>
         </div>
         <DiscordPreview />
       </div>
@@ -56,12 +64,14 @@ export function FeatureCard({ feature }: FeatureCardProps) {
 
   if (tier === "mid") {
     return (
-      <div className="rounded-xl p-5 bg-brand-accent/[0.03] border border-brand-accent/[0.13] flex flex-col gap-2">
+      <div className="h-full rounded-xl p-5 bg-brand-accent/[0.03] border border-brand-accent/[0.13] flex flex-col gap-2 justify-center">
         <div className="text-xl text-brand-accent/80">
           <IconComponent />
         </div>
         <h3 className="text-base font-bold">{title}</h3>
-        <p className="text-muted-foreground text-sm leading-relaxed">{description}</p>
+        <p className="text-muted-foreground text-sm leading-relaxed">
+          {description}
+        </p>
       </div>
     );
   }
@@ -73,8 +83,12 @@ export function FeatureCard({ feature }: FeatureCardProps) {
         <IconComponent />
       </div>
       <div>
-        <div className="text-sm font-semibold text-muted-foreground">{title}</div>
-        <div className="text-xs text-muted-foreground/60 leading-relaxed">{description}</div>
+        <div className="text-sm font-semibold text-muted-foreground">
+          {title}
+        </div>
+        <div className="text-xs text-muted-foreground/60 leading-relaxed">
+          {description}
+        </div>
       </div>
     </div>
   );
