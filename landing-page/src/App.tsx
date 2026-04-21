@@ -3,6 +3,7 @@ import Instructions from "./sections/instructions/Instructions";
 import Features from "./sections/features/Features";
 import CallToAction from "./sections/cta/callToAction";
 import { ThemeProvider } from "./components/themeProvider";
+import Footer from "./components/ui/Footer";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Instructions />
       <Features />
       <CallToAction />
+      <Footer />
     </ThemeProvider>
   );
 }

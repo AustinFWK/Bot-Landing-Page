@@ -6,6 +6,7 @@ export default function CallToAction() {
     <section className="section">
       <div className="container">
         <h2>Ready to stay up to date? </h2>
+        <p>Add the bot to your server and never miss an update!</p>
         <a
           href="https://discord.com/oauth2/authorize?client_id=1204815740918693898"
           target="_blank"
