@@ -21,12 +21,18 @@ export function InstructionSteps({ instruction }: InstructionStepsProps) {
 
           <h3>{title}</h3>
 
-          <p className="text-muted-foreground text-sm leading-relaxed">{description}</p>
+          <p className="text-muted-foreground text-sm leading-relaxed">
+            {description}
+          </p>
         </CardContent>
       </Card>
 
-      <div className="rounded-xl overflow-hidden border bg-muted">
-        <img src={image} alt={title} className="w-full h-auto" />
+      <div className="rounded-xl overflow-hidden border bg-muted aspect-video">
+        <img
+          src={image}
+          alt={title}
+          className="w-full h-auto object-fit: cover; object-position: top"
+        />
       </div>
     </div>
   );
