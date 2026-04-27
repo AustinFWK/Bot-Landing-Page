@@ -5,6 +5,10 @@ export default function Instructions() {
   return (
     <section className="section">
       <div className="container space-y-24">
+        <h2 className="mb-3">How to get started</h2>
+        <p className="text-muted-foreground mb-10 text-lg">
+          Patch notes at your server tips.
+        </p>
         {instructions.map((instruction) => (
           <InstructionSteps key={instruction.title} instruction={instruction} />
         ))}
