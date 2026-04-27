@@ -27,12 +27,27 @@ export function InstructionSteps({ instruction }: InstructionStepsProps) {
         </CardContent>
       </Card>
 
-      <div className="rounded-xl overflow-hidden border bg-muted aspect-video">
-        <img
-          src={image}
-          alt={title}
-          className="w-full h-auto object-fit: cover; object-position: top"
-        />
+      <div className="rounded-xl overflow-hidden border border-white/10">
+        {/* Discord-style titlebar */}
+        <div className="bg-[#1e1f22] px-4 py-2.5 flex items-center gap-2">
+          <div className="flex gap-1.5">
+            <span className="w-2.5 h-2.5 rounded-full bg-white/20" />
+            <span className="w-2.5 h-2.5 rounded-full bg-white/20" />
+            <span className="w-2.5 h-2.5 rounded-full bg-white/20" />
+          </div>
+          <span className="text-[11px] text-white/40 font-medium mx-auto">
+            Valorant Patch Bot
+          </span>
+        </div>
+
+        {/* Screenshot */}
+        <div className="aspect-video bg-[#313338]">
+          <img
+            src={image}
+            alt={title}
+            className="w-full h-full object-cover object-top"
+          />
+        </div>
       </div>
     </div>
   );
