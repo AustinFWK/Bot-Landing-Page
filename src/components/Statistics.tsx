@@ -22,7 +22,7 @@ export default function Statistics() {
       <div className="flex items-center gap-2">
         <Badge
           variant="outline"
-          className="text-lg px-3 py-1 border-brand-accent/40 text-brand-accent bg-brand-accent/10 px-4 py-3"
+          className="text-2xl border-brand-accent/40 text-brand-accent bg-brand-accent/10 px-6 py-5"
         >
           <span className="font-semibold">
             {stats ? stats.servers.toLocaleString() : "..."}
@@ -31,7 +31,7 @@ export default function Statistics() {
         </Badge>
         <Badge
           variant="outline"
-          className="text-lg px-3 py-1 border-brand-accent/40 text-brand-accent bg-brand-accent/10 px-4 py-3"
+          className="text-2xl border-brand-accent/40 text-brand-accent bg-brand-accent/10 px-6 py-5"
         >
           <span className="font-semibold">
             {stats ? stats.members.toLocaleString() : "..."}
